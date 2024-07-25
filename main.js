@@ -38,6 +38,11 @@ app.get("/tejas", (req, res) => {
     res.send("tejas api")
 })
 
+app.get("/fianlapi", (req,res)=>{
+    res.status(200).json({
+        msg : "Thank YOu so much :)"
+    })
+})
 
 app.listen(process.env.PORT, (req, res) => {
     console.log(`listening port ${process.env.PORT}`);
