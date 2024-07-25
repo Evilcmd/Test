@@ -17,6 +17,9 @@ app.get("/aboutus", (req, res) => {
     })
 })
 
+app.get("/vinayak",(req,res)=>{
+  res.send("helooo vinayakkk");
+})
 
 app.get("/develop", (req, res) => {
     res.json({
@@ -25,15 +28,16 @@ app.get("/develop", (req, res) => {
 })
 
 
-
 app.get("/design", (req, res) => {
     res.send("Design api")
 })
 
 
+
 app.get("/tejas", (req, res) => {
     res.send("tejas api")
-})
+
+
 
 app.listen(process.env.PORT, (req, res) => {
     console.log(`listening port ${process.env.PORT}`);
