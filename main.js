@@ -17,6 +17,10 @@ app.get("/aboutus" ,(req,res)=>{
   })
 })
 
+app.get("/design", (req, res) => {
+  res.send("Design api")
+})
+
 app.listen(process.env.PORT, (req, res)=>{
    console.log(`listening port ${process.env.PORT}`);
 })
