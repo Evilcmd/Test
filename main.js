@@ -17,6 +17,14 @@ app.get("/aboutus" ,(req,res)=>{
   })
 })
 
+app.get("/develop",(req,res)=>{
+  res.json({
+    msg :"im developing my git skills",
+  })
+})
+
+
 app.listen(process.env.PORT, (req, res)=>{
    console.log(`listening port ${process.env.PORT}`);
 })
+
