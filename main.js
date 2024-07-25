@@ -17,10 +17,17 @@ app.get("/aboutus" ,(req,res)=>{
   })
 })
 
+
 app.get("/develop",(req,res)=>{
   res.json({
     msg :"im developing my git skills",
   })
+})
+
+
+
+app.get("/design", (req, res) => {
+  res.send("Design api")
 })
 
 
