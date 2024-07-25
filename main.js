@@ -11,4 +11,12 @@ app.get("/", (req, res) => {
   res.send("You are in root directory")
 })
 
-app.listen(process.env.PORT)
+app.get("/aboutus" ,(req,res)=>{
+  res.json({
+    msg : "helloo",
+  })
+})
+
+app.listen(process.env.PORT, (req, res)=>{
+   console.log(`listening port ${process.env.PORT}`);
+})
